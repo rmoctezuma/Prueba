@@ -1,4 +1,5 @@
 from django.http import HttpResponse, Http404
+from django.shortcuts import render_to_response
 import datetime;
 
 def hello(request):
@@ -13,3 +14,9 @@ def hours_ahead(request,offset):
 	dt = datetime.datetime.now() + datetime.timedelta(hours = offset)
 	html = "<html><body>En %s hora(s), seran las %s</body></html>" % (offset,dt)
 	return HttpResponse(html)
+
+def hello_user(request):
+	return render_to_response('base.html',{'user': 'Raul', 'product': 'computer'})
+
+def operadores(request):
+	return render_to_response('Operadores.html', {'product' : 'El producto interno bruto', 'empresa' : 'timsa'})

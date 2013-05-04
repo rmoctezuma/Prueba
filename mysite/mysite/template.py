@@ -19,5 +19,5 @@ c = Context({'person_name' : 'Raul',
 			'ship_date' : datetime.date(2009,4,2),
 			'ordered_warranty' : False})
 
-t.render(c)
+print t.render(c)
 

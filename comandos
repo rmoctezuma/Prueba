@@ -1,0 +1,38 @@
+Django commands
+
+Intrucciones para crear un proyecto con Django.
+
+Configuracion de la maquina.
+
+Instalar python.
+Instalar Django.
+Agregar al path django-admin.py
+Iniciar un proyecto.
+Para definir un modelo de datos, iniciar un app.
+Si se desea utilizar el admin, crear las tablas necesarias con "python manage.py syncdb".
+Con los modulos activos de middleware y apps installed.
+
+-------------------------------------------------------------------------------
+------------------------start a project-------------------------------------
+-------------------------------------------------------------------------------
+
+django-admin.py startproject 'nombreProyecto'
+
+-------------------------------------------------------------------------------
+-------------------------start an app-------------------------------------
+-------------------------------------------------------------------------------
+
+python manage.py startapp 'appname'
+
+-------------------------------------------------------------------------------
+---------------------------models---------------------------------------------
+-------------------------------------------------------------------------------
+
+python manage.py validate
+
+python manage.py sqlall books
+
+python manage.py syncdb
+
+python manage.py dbshell
+
